@@ -1343,18 +1343,18 @@
   </target>
 
   <!-- Default JUnit log output formatter -->
-  <property name="junit.formatter.type" value="plain" />
+  <property name="junit.formatter.type" value="xml" />
   <property name="junit.formatter.usefile" value="true" />
-  <property name="junit.formatter.extension" value=".txt" />
+  <property name="junit.formatter.extension" value=".xml" />
 
   <target name="test" description="Runs the JUnit test cases"
           depends="test-nio,test-nio2,test-apr,cobertura-report" >
-    <fileset id="test.result.skippedtests" dir="${test.reports}" includes="*.txt">
+    <fileset id="test.result.skippedtests" dir="${test.reports}" includes="*.xml">
       <not>
         <contains text="Skipped: 0" />
       </not>
     </fileset>
-    <fileset id="test.result.failedtests" dir="${test.reports}" includes="*.txt">
+    <fileset id="test.result.failedtests" dir="${test.reports}" includes="*.xml">
       <not>
         <contains text="Failures: 0, Errors: 0" />
       </not>
