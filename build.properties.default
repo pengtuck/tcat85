@@ -45,7 +45,7 @@ test.accesslog=false
 # thread per core.
 # Note: Cobertura code coverage currently requires this to be set to 1. Setting
 #       a value above one will disable code coverage if enabled.
-test.threads=1
+test.threads=2
 
 # Note the Cobertura code coverage tool is GPLv2 licensed
 test.cobertura=false
