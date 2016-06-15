@@ -29,7 +29,6 @@ import javax.websocket.WebSocketContainer;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.Ignore;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.servlets.DefaultServlet;
@@ -39,7 +38,6 @@ import org.apache.tomcat.websocket.TesterMessageCountClient.BasicText;
 import org.apache.tomcat.websocket.TesterMessageCountClient.SleepingText;
 import org.apache.tomcat.websocket.TesterMessageCountClient.TesterProgrammaticEndpoint;
 
-@Ignore
 public class TestWebSocketFrameClientSSL extends WebSocketBaseTest {
 
     @Test

@@ -18,7 +18,6 @@ package org.apache.coyote.http2;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.Ignore;
 
 /**
  * Unit tests for Section 4.2 of
@@ -27,7 +26,6 @@ import org.junit.Ignore;
  * The order of tests in this class is aligned with the order of the
  * requirements in the RFC.
  */
-@Ignore
 public class TestHttp2Section_4_2 extends Http2TestBase {
 
     @Test
